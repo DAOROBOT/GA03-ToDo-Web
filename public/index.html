@@ -5,89 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do App</title>
   <link rel="stylesheet" href="./output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+      .font-poppins {
+          font-family: 'Poppins', sans-serif;
+      }
+  </style>
 
 </head>
-<body class="relative">
-<div
-  class="fixed inset-0 -z-10 w-full h-screen bg-gray-100 bg-cover bg-center bg-repeat"
-  style="background-image: url('/src/assets/bg');">
-</div>
+<body>
+  <div
+    class="fixed inset-0 -z-10 w-full h-screen bg-gray-100 bg-cover bg-center bg-repeat"
+    style="background-image: url('/src/assets/bg');">
+  </div>
 
-<script src="../src/js/app.js"></script>
-<!-- <div class=" shadow-lg absolute top-0 w-full h-64"></div> -->
+  <script src="../src/js/app.js"></script>
 
-<div class="flex flex-col justify-center items-center bg-white opacity-80 rounded-lg p-10">
-<h1 class="text-[50px] font-bold font-[Poppins] text-gray-800 opacity-100">
-  KTPM01 - GA03
-</h1>
-<p class="text-[25px]">
-  Welcome to our To-Do App!
-</p>
-<a href="todo.html" class="flex flex-row bg-violet-500 text-white px-6 py-3 mt-10 rounded-full hover:bg-violet-600 transition-colors">
-  <div class="pr-4 ml-10">To-Do Page</div>
-  <div class="mr-10">→</div>
-</a>
+  <div class="flex flex-col justify-center items-center bg-white dark:bg-gray-800 shadow-xl rounded-lg p-10 w-full text-center mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold font-poppins text-gray-800 dark:text-white">
+          KTPM01 - GA03
+      </h1>
+      <p class="text-xl md:text-2xl mt-2">
+          Welcome to our To-Do App!
+      </p>
+      <a href="todo.html" class="flex flex-row items-center justify-center bg-violet-500 text-white px-8 py-3 mt-10 rounded-full hover:bg-violet-700 transition-colors font-semibold">
+          <span>To-Do Page</span>
+          <span class="ml-2">→</span>
+      </a>
+  </div>
 
-</div>
-
-<div class="grid grid-cols-3 gap-y-10 gap-10 w-max mx-auto p-10">
-  <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900 ">
-    <div>Ngo Huynh Gia Thoai</div>
-    <div>Task</div>
-    <ul>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-10 w-max mx-auto p-10">
+    
+    <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900 dark:border-gray-200">
+      <div class="font-bold text-lg">Ngo Huynh Gia Thoai</div>
+      <div class="font-semibold mt-2">Task</div>
+      <ul class="list-disc pl-5 mt-2 w-full text-left">
         <li>Task 1</li>
         <li>Task 2</li>
         <li>Task 3</li>
-    </ul>
-  </div>
-  <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900">
-    <div>Nguyen Thien Phuc</div>
-    <div>Task</div>
-    <ul>
+      </ul>
+    </div>
+
+    <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900 dark:border-gray-200">
+      <div class="font-bold text-lg">Nguyen Thien Phuc</div>
+      <div class="font-semibold mt-2">Task</div>
+      <ul class="list-disc pl-5 mt-2 w-full text-left">
         <li>Task 1</li>
         <li>Task 2</li>
         <li>Task 3</li>
-    </ul>
-  </div>
-  <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900">
-    <div>Dinh Viet Hai</div>
-    <div>Task</div>
-    <ul>
+      </ul>
+    </div>
+
+    <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900 dark:border-gray-200">
+      <div class="font-bold text-lg">Dinh Viet Hai</div>
+      <div class="font-semibold mt-2">Task</div>
+      <ul class="list-disc pl-5 mt-2 w-full text-left">
         <li>Task 1</li>
         <li>Task 2</li>
         <li>Task 3</li>
-    </ul>
-  </div>
-  <div class="col-span-3 flex justify-center gap-10 ">
+      </ul>
+    </div>
 
-  <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900">
-    <div>Nguyen Van A</div>
-    <div>Task</div>
-    <ul>
+    <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900 dark:border-gray-200">
+      <div class="font-bold text-lg">Trần Quang Đạo</div>
+      <div class="font-semibold mt-2">Task</div>
+      <ul class="list-disc pl-5 mt-2 w-full text-left">
+        <li>Luyện code</li>
+        <li>Học web</li>
+        <li>Nghe nhạc</li>
+      </ul>
+    </div>
+  
+    <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900 dark:border-gray-200">
+      <div class="font-bold text-lg">Nguyen Van B</div>
+      <div class="font-semibold mt-2">Task</div>
+      <ul class="list-disc pl-5 mt-2 w-full text-left">
         <li>Task 1</li>
         <li>Task 2</li>
         <li>Task 3</li>
-    </ul>
+      </ul>
+    </div>
   </div>
-  <div class="flex flex-none w-64 flex-col bg-sky-200 justify-center items-center p-4 border-1 border-r-4 border-b-4 rounded-xl border-gray-900">
-    <div>Nguyen Van B</div>
-    <div>Task</div>
-    <ul>
-        <li>Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
-    </ul>
-  <div class="col-span-1"></div> <!-- Empty spacer -->
-
-  </div>
-  </div>
-
-  <!-- <div class="flex-1 w-32 bg-sky-400"></div>
-  <div class="flex-1 w-32 bg-sky-400"></div>
-  <div class="flex-1 w-32 bg-sky-400"></div>
-  <div class="flex-1 w-32 bg-sky-400"></div> -->
-</div>
-
 </body>
 </html>
